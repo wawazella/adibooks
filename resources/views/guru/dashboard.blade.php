@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-8">
               <div class="numbers">
-                <p class="text-sm mb-0 text-uppercase font-weight-bold">Materi </p>
+                <p class="text-sm mb-0 text-uppercase font-weight-bold">Materi Test </p>
                 <h5 class="font-weight-bolder">
                   5
                 </h5> 
