@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('subject_materials', function (Blueprint $table) {
+        Schema::create('materials', function (Blueprint $table) {
             $table->id();
             $table->foreign('teacher_id')->references('id')->on('teachers');
-            $table->string('title');
+            $table->string('tittle');
             $table->text('description');
-            $table->string('file_path');
+            $table->string('file');
             $table->unsignedBigInteger('teacher_id');
             $table->timestamps();
             $table->dateTime('published_at')->nullable();

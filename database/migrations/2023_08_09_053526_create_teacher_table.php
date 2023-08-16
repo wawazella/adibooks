@@ -12,11 +12,14 @@ return new class extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id();
-            $table->string('nip')->unique();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('level');
+            $table->string('full name')->unique();
+            $table->string('username');
+            $table->string('password')->unique();
+            $table->string('subject');
+            $table->string('profil_picture');
+            $table->string('phone_number');
+            $table->string('addres');
+            $table->string('status');
             $table->timestamps();
         });
     }
